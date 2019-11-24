@@ -1,0 +1,82 @@
+<body>
+
+    <header>
+        <h3 class="center-align ">EAT-DA-BURGEEER!!</h3>
+    </header>
+
+    <div id="body" class="container mainDiv">
+
+
+        <div class="row">
+            <div class="col s12  center-align imgDiv">
+
+
+                <img src="/images/b1.png" alt=" burgerpic">
+
+
+            </div>
+
+        </div>
+
+        <div class="container burgerList">
+
+            <div class="row">
+                <div class="col s6 m6 center-align colNotEaten">
+
+                    <h5>TO EAT</h5>
+                    <ul class="collection-item">
+                        {{!-- not eaten, where devoured is false  --}}
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        {{> burgers/burger-block devoure=true}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <div class="col s6 m6 center-align colEaten ">
+                    <h5>EATEN</h5>
+                    <ul>
+
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <li>
+                            {{burger_name}}
+
+                            <button class=" delete-burger  waves-effect red accent-4 waves-light btn"
+                                data-id="{{this.id}}">Delete</button>
+                        </li>
+
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class=" col s12 inputBox ">
+                    <div class="row center-align ">
+                        <form class="create-form  center-align ">
+                            <div class=" input-field  center-align  ">
+
+                                <input type="text" id="bg" name="name">
+                                <button class="waves-effect red accent-4  rounded waves-light  btn"><i
+                                        class=" fas fa-hamburger "></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+</body>

@@ -1,0 +1,59 @@
+h1, h2, h3, h4,h5 ,p,li, ul{
+    font-family: 'Titillium Web', sans-serif;;
+    
+}
+
+
+h1 {
+    color: red;
+}
+
+li ,  ul {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0;
+}
+
+body{
+   
+     background: linear-gradient(180deg, #e8b730,#EA823D , #B02021); 
+   
+    
+}
+
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: red !important;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+
+  .colEaten, .colNotEaten {
+
+    overflow: auto; 
+ }
+
+
+img {
+    height: 200px; 
+    width: 200;
+}
+
+.burgerList{
+    background-color: wheat;
+    /* opacity: 50%; */
+    border-style: inset;
+}
+.btn {
+    font-family: 'Titillium Web', sans-serif;
+    font-display: 15px;
+    letter-spacing: 2px;
+    align-content: center;
+    
+    
+}
+
+ 
