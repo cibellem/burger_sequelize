@@ -26,9 +26,21 @@
                     <h5>TO EAT</h5>
                     <ul class="collection-item">
                         {{!-- not eaten, where devoured is false  --}}
+
+
+
                         {{#each burgers}}
                         {{#unless devoured}}
-                        {{> burgers/burger-block devoure=true}}
+                        <li>
+                            {{burger_name}}
+
+
+                            <button class="change-status waves-effect red accent-4 waves-light btn" data-id="{{id}}"
+                                data-newStatus="{{devoure}}">
+                                {{#if devoure}}DEVOUR ME!{{/if}}
+                            </button>
+
+                        </li>
                         {{/unless}}
                         {{/each}}
                     </ul>

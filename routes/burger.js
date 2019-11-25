@@ -19,22 +19,19 @@ module.exports = function (app) {
 
         let newBurger = req.body
         db.burger.create({
+
             burger_name: newBurger.burger_name,
             devoured: false
 
         }).then(function (result) {
-            console.log(result)
             return res.json({ id: result.insertId });
         })
-        res.status(204).end();
     })
 
     app.put("/api/burgers/:id", function (req, res) {
-
         db.burger.update(
             { devoured: true },
-            { where: req.params.id }
-
+            { returning: true, where: { id: req.params.id } }
         ).then(function (result) {
             return res.json(result)
         })
