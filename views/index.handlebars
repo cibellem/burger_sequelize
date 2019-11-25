@@ -21,7 +21,7 @@
         <div class="container burgerList">
 
             <div class="row">
-                <div class="col s6 m6 center-align colNotEaten">
+                <div class="col s6 m6 center-align burgerCol ">
 
                     <h5>TO EAT</h5>
                     <ul class="collection-item">
@@ -36,7 +36,7 @@
 
 
                             <button class="change-status waves-effect red accent-4 waves-light btn" data-id="{{id}}"
-                                data-newStatus="{{devoure}}">
+                                data-newStatus="{{devoure}}">DEVOUR ME!
                                 {{#if devoure}}DEVOUR ME!{{/if}}
                             </button>
 
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
 
-                <div class="col s6 m6 center-align colEaten ">
+                <div class="col s6 m6 center-align burgerCol ">
                     <h5>EATEN</h5>
                     <ul>
 
@@ -66,7 +66,6 @@
 
             </div>
         </div>
-
 
 
         <div class="container">

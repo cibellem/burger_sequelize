@@ -18,6 +18,7 @@ module.exports = function (app) {
     app.post("/api/burgers", function (req, res) {
 
         let newBurger = req.body
+        console.log(newBurger)
         db.burger.create({
 
             burger_name: newBurger.burger_name,
