@@ -1,6 +1,7 @@
 # Burger 2 The Sequel
 
 
+![demogif](public/images/bg.gif) <br>
 
 ### Description
 
@@ -18,13 +19,12 @@ Handlebar.js <br>
 Materialize <br>
 Sequelize
 
-### Link
+### Link 
+Check it out!
+
+https://radiant-waters-32407.herokuapp.com/
 
 
-
-
-![demogif](public/images/bg.gif) <br>
 ![iphone](public/images/iphonebg.png) <br>
-
 
 
